@@ -1,21 +1,25 @@
-import './App.css';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
 import BgAnimation from "../src/components/BackgrooundAnimation/BackgroundAnimation";
 import { Section } from '../src/styles/GlobalComponents';
-import { Container } from './components/Header/HeaderStyles';
 import Projects from './components/Projects/Projects';
+import Technologies from './components/Technologies/Technologies';
+import Timeline from './components/TimeLine/TimeLine';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <Container>
+    <div>
         <Header/>
       <Section grid>
         <Hero/>
         <BgAnimation />
       </Section>
       <Projects />
-    </Container>
+      <Technologies />
+      <Timeline/> 
+      <Footer/>
+    </div>
   );
 }
 

@@ -7,6 +7,15 @@ export const Container = styled.div`
   grid-column-gap: 2rem;
   padding: 1rem;
   padding-top: 2rem;
+
+  @media screen and (max-width: 640px) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 60px);
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 0.5rem;
+    background: #413264;
+  }
 `;
 
 export const Span = styled.div`
@@ -18,22 +27,30 @@ export const Div1 = styled.div`
   display: flex;
   flex-direction: row;
   align-content: center;
+  @media screen and (max-width: 640px) {
+    grid-area: 1 / 1 / 2 / 3;
+    
+  }
 `;
-
 export const Div2 = styled.div`
   grid-area: 1 / 2 / 2 / 4;
   display: flex;
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  
+  @media screen and (max-width: 640px) {
+    grid-area: 2 / 2 / 3 / 5;
+  }
 `;
 export const Div3 = styled.div`
   grid-area: 1 / 5 / 2 / 6;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
+  @media screen and (max-width: 640px) {
+    align-items: center;
+    grid-area: 1 / 4 / 2 / 6;
+  }
 `;
 
 // Navigation Links
@@ -47,7 +64,9 @@ export const NavLink = styled.a`
     opacity: 1;
     cursor: pointer;
   }
- 
+  @media screen and (max-width: 640px) {
+    padding: 0.5rem;
+  }
 `;
 
 /// DropDown Contact
@@ -70,6 +89,12 @@ export const ContactDropDown = styled.button`
     color: #fff;
   }
 
+  @media screen and (max-width: 640px) {
+    padding: 0.4rem 0;
+  }
+  @media ${(props) => props.theme.breakpoints.md} {
+    padding: 0;
+  }
 `;
 
 export const NavProductsIcon = styled(IoIosArrowDropdown)`
@@ -77,12 +102,17 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
   display: flex;
   align-self: center;
   transition: 0.3s ease;
+  opacity: ${({ isOpen }) => (isOpen ? '1' : '.75')};
+  transform: ${({ isOpen }) => (isOpen ? 'scaleY(-1)' : 'scaleY(1)')};
 
   &:hover {
     opacity: 1;
   }
 
- 
+  @media screen and (max-width: 640px) {
+    margin: 2px 0 0 2px;
+    width: 15px;
+  }
 `;
 
 

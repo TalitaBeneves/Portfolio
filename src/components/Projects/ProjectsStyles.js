@@ -48,7 +48,7 @@ export const HeaderThree = styled.h3`
   font-weight: 500;
   color: #9cc9e3;
   padding: .5rem 0;
-  font-size: Space Grotesk, sans-serif;
+  font-size: ${(props) => props.title ? '3rem' : '2rem'};
 `;
 
 export const Hr = styled.hr`
