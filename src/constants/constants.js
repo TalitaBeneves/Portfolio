@@ -13,15 +13,7 @@ export const projects = [
     visit: 'https://github.com/TalitaBeneves/React-Website',
     id: 0,
   },
-  {
-    title: 'Animated-Website',
-    desc:"O projeto é sobre as montanhas mais populares do mundo em formato de Rank, junto com as mais perigosas e as mais escaladas",
-    image: foto2,
-    tags: ['React Hooks', 'Styled Components'],
-    source: 'https://www.youtube.com/watch?v=iP4E3R7m2v0',
-    visit: 'https://github.com/TalitaBeneves/ReactJS-Animated-Website',
-    id: 1,
-  },
+ 
   {
     title: 'Game-Database ',
     desc: "Site de banco de dados de jogos em Angular 11 com uma API pública. Utilizei ngFor, ngIf, chamadas http, interceptores http, rotas para transmitir dados entre os componentes e outros.",
@@ -29,6 +21,15 @@ export const projects = [
     tags: ['Angular', 'API Pública'],
     source: 'https://www.youtube.com/watch?v=4TUQBMGeb4s',
     visit: 'https://github.com/TalitaBeneves/Biblioteca-de-Jogos',
+    id: 1,
+  },
+  {
+    title: 'Animated-Website',
+    desc:"O projeto é sobre as montanhas mais populares do mundo em formato de Rank, junto com as mais perigosas e as mais escaladas",
+    image: foto2,
+    tags: ['React Hooks', 'Styled Components'],
+    source: 'https://www.youtube.com/watch?v=iP4E3R7m2v0',
+    visit: 'https://github.com/TalitaBeneves/ReactJS-Animated-Website',
     id: 2,
   },
   {

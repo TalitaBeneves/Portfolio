@@ -3,12 +3,14 @@ import React, { useState, useRef, useEffect } from 'react';
 import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { TimeLineData } from '../../constants/constants';
+import Cv from './cv';
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
 const Timeline = () => {
   const [activeItem, setActiveItem] = useState(0);
   const carouselRef = useRef();
+  
 
   const scroll = (node, left) => {
     return node.scrollTo({ left, behavior: 'smooth' });
@@ -41,6 +43,7 @@ const Timeline = () => {
     window.addEventListener('resize', handleResize);
   }, []);
 
+
   return (
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
@@ -51,6 +54,7 @@ const Timeline = () => {
 
       Fui praticando, evoluindo e me aperfeiçoando e com isso construí alguns projetos que você pode encontrar no meu GitHub. Depois de todo esse esforço fui selecionada para estudar na Resilia Educação.
       </SectionText>
+      
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (
@@ -99,6 +103,8 @@ const Timeline = () => {
           ))}
         </>
       </CarouselContainer>
+      <Cv />
+      
       <CarouselButtons>
         {TimeLineData.map((item, index) => (
           <CarouselButton
