@@ -1,9 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
 
-import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode } from './TimeLineStyles';
-import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, CarouselItem, CarouselItemImg, CarouselItemText, CarouselItemTitle, CarouselMobileScrollNode, Card, SectionTextCard, CardImg } from './TimeLineStyles';
+import { Section, SectionTitle } from '../../styles/GlobalComponents';
 import { TimeLineData } from '../../constants/constants';
 import Cv from './cv';
+import minha from "../../img/minha.jpg";
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
@@ -47,14 +48,17 @@ const Timeline = () => {
   return (
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
-      <SectionText>
-      Sou apaixonada por programação desde os 14 anos, mas nunca tinha estudado pra valer, 
-      então quando terminei o ensino médio decidi entrar no mundo do Desenvolvimento Web, 
-      e logo nos primeiros cursos que eu fiz percebi que era realmente isso que eu queria fazer.
+      <Card>
+      <CardImg>
+        <img src={minha} alt="foto" width="230px" height="299px"/>
+      </CardImg>
+        <SectionTextCard>
+        Sou apaixonada por programação desde os 14 anos, mas nunca tinha estudado pra valer, então quando terminei o ensino médio decidi entrar no mundo do Desenvolvimento Web, 
+        e logo nos primeiros cursos que eu fiz percebi que era realmente isso que eu queria fazer.
 
-      Fui praticando, evoluindo e me aperfeiçoando e com isso construí alguns projetos que você pode encontrar no meu GitHub. Depois de todo esse esforço fui selecionada para estudar na Resilia Educação.
-      </SectionText>
-      
+        Fui praticando, evoluindo e me aperfeiçoando e com isso construí alguns projetos que você pode encontrar no meu GitHub. Depois de todo esse esforço fui selecionada para estudar na Resilia Educação.
+        </SectionTextCard>
+      </Card>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (
@@ -80,6 +84,7 @@ const Timeline = () => {
                       fill-opacity="0.33"
                     />
                     <defs>
+      
                       <linearGradient
                         id="paint0_linear"
                         x1="-4.30412e-10"
@@ -104,7 +109,7 @@ const Timeline = () => {
         </>
       </CarouselContainer>
       <Cv />
-      
+
       <CarouselButtons>
         {TimeLineData.map((item, index) => (
           <CarouselButton

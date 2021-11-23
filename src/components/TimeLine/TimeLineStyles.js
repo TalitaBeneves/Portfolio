@@ -31,6 +31,62 @@ export const CarouselContainer = styled.ul`
     margin-bottom: 8px;
   }
 `
+
+export const CardImg = styled.div`
+  display: flex;
+  padding: 25px  25px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+
+  @media screen and (max-width: 640px) {
+    width: 100%;
+    display: none;
+  }
+  @media screen and (max-width: 640px) {
+    width: 100%;
+    display: none;
+  }
+`;
+
+export const Card = styled.div`
+  display: flex;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(25, 2, 47, 0.2);
+  margin-bottom: 30px;
+
+  @media screen and (max-width: 640px) {
+    width: 100%;
+    
+  }
+`;
+
+export const SectionTextCard = styled.p`
+  display: flex;
+  max-width: 900px;
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 300;
+  text-align: left;
+  padding-bottom: 3.6rem;
+  padding: 20px 5px;
+  color: rgba(255, 255, 255, 0.7);
+
+  @media screen and (max-width: 768px) {
+    max-width: 670px;
+    font-size: 20px;
+    line-height: 32px;
+    padding-bottom: 24px;
+  }
+
+  @media screen and (max-width: 640px) {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 16px;
+  }
+`
+
 export const CarouselMobileScrollNode = styled.div`
   @media screen and (max-width: 640px) {
     display: flex;
