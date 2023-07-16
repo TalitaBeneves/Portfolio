@@ -1,6 +1,5 @@
-![portfolio](https://user-images.githubusercontent.com/83943087/142779968-1ebf6fba-4369-496f-9b99-3390aa3c546d.png)
+![image](https://github.com/TalitaBeneves/Portfolio/assets/83943087/4a81e0aa-70a9-4649-aad1-c076fd4631c8)
 
 ## PORTFÓLIO CRIADO 💻
 
 ### `yarn dev`
-
