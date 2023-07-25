@@ -3,7 +3,7 @@ import React from "react";
 import jsPDF from "jspdf";
 import { AiFillFileText, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { DiCssdeck } from "react-icons/di";
-import Talita from "../../img/Talita.png";
+import Talita from "../../img/Talita2.png";
 import {
   Container,
   Div1,

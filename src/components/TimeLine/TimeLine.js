@@ -17,7 +17,7 @@ import {
 import { Section, SectionTitle } from "../../styles/GlobalComponents";
 import { TimeLineData } from "../../constants/constants";
 import Cv from "./cv";
-import minha from "../../img/minha.jpg";
+import minha from "../../img/minha2.jpeg";
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
@@ -67,15 +67,16 @@ const Timeline = () => {
       <SectionTitle>About Me</SectionTitle>
       <Card>
         <CardImg>
-          <img src={minha} alt="foto" width="230px" height="299px" />
+          <img src={minha} alt="foto" width="300px" height="360px" />
         </CardImg>
         <SectionTextCard>
-          Sou apaixonada por programação desde os 14 anos, mas nunca tinha
-          estudado pra valer, então quando terminei o ensino médio decidi entrar
-          no mundo do Desenvolvimento Web, e logo nos primeiros cursos que eu
-          fiz percebi que era realmente isso que eu queria fazer. Fui
-          praticando, evoluindo e me aperfeiçoando e com isso construí alguns
-          projetos que você pode encontrar no meu GitHub.
+          Tenho uma sólida experiência em diversas tecnologias. Essas
+          habilidades me permitiram enfrentar diversos desafios e desenvolver
+          projetos empolgantes ao longo do tempo. <br />
+          Atualmente, estou dedicando minha jornada acadêmica à faculdade de
+          Análise e Desenvolvimento de Sistemas. Estou animada em aprofundar
+          ainda mais meus conhecimentos e habilidades para me tornar uma
+          profissional altamente qualificada na área de desenvolvimento.
         </SectionTextCard>
       </Card>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
